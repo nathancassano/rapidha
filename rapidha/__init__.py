@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import sys
+import argparse
+from rapidha import RapidHADevice
+
 def main(argv=None):
     parser = argparse.ArgumentParser( prog="rapidha", description='Console interface to RapidHA serial device communication', epilog='')
     parser.add_argument('input', metavar='/dev/ttyUSB0', help="Serial TTY device")
